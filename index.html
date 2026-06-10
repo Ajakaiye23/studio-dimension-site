@@ -175,10 +175,10 @@ section{position:relative;padding:14vh 7vw}
 @keyframes drip{to{top:100%}}
 
 /* ============ MARQUEE ============ */
-.marquee{background:var(--ink);color:var(--cream);overflow:hidden;padding:13px 0;transform:rotate(-1.2deg);margin:0 -2vw;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
-.marquee .mtrack{display:flex;gap:46px;white-space:nowrap;width:max-content;animation:mq 26s linear infinite}
-.marquee .mt{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.22em}
-.marquee .mt em{font-style:normal;color:var(--lav-2)}
+.marquee{position:relative;z-index:5;background:var(--lav-deep);color:var(--cream);overflow:hidden;padding:15px 0;margin-top:2.5vh;border-top:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink)}
+.marquee .mtrack{display:flex;gap:46px;white-space:nowrap;width:max-content;animation:mq 30s linear infinite}
+.marquee .mt{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.22em;line-height:1}
+.marquee .mt em{font-style:normal;color:var(--yellow)}
 @keyframes mq{to{transform:translateX(-50%)}}
 
 /* ============ MISSION ============ */
